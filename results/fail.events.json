@@ -1,0 +1,53 @@
+[
+  {
+    "at": "2026-09-21T09:26:34.298Z",
+    "elapsedMs": 353.0629,
+    "type": "server_ready",
+    "pid": 44620
+  },
+  {
+    "at": "2026-09-21T09:26:34.519Z",
+    "elapsedMs": 572.1895,
+    "type": "k6_started",
+    "pid": 3052,
+    "args": [
+      "run",
+      "--no-color",
+      "--summary-mode",
+      "full",
+      "--summary-export",
+      "results/fail.json",
+      "slo-test-fail.js"
+    ]
+  },
+  {
+    "at": "2026-09-21T09:27:36.568Z",
+    "elapsedMs": 62620.9136,
+    "type": "k6_exited",
+    "pid": 3052,
+    "code": 99,
+    "signal": null
+  },
+  {
+    "at": "2026-09-21T09:27:36.569Z",
+    "elapsedMs": 62622.3185,
+    "type": "server_stop_requested",
+    "pid": 44620,
+    "reason": "run complete"
+  },
+  {
+    "at": "2026-09-21T09:27:36.582Z",
+    "elapsedMs": 62635.2047,
+    "type": "server_exited",
+    "pid": 44620,
+    "code": null,
+    "signal": "SIGTERM"
+  },
+  {
+    "at": "2026-09-21T09:27:36.592Z",
+    "elapsedMs": 62644.8804,
+    "type": "server_stopped",
+    "pid": 44620,
+    "reason": "run complete"
+  }
+]
