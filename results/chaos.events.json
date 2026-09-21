@@ -1,0 +1,92 @@
+[
+  {
+    "at": "2026-09-21T09:21:12.988Z",
+    "elapsedMs": 311.09630000000004,
+    "type": "server_ready",
+    "pid": 40236
+  },
+  {
+    "at": "2026-09-21T09:21:13.219Z",
+    "elapsedMs": 540.6587999999999,
+    "type": "k6_started",
+    "pid": 43496,
+    "args": [
+      "run",
+      "--no-color",
+      "--summary-mode",
+      "full",
+      "--summary-export",
+      "results/chaos.json",
+      "--duration",
+      "2m",
+      "-e",
+      "CHAOS=1",
+      "slo-test.js"
+    ]
+  },
+  {
+    "at": "2026-09-21T09:21:43.221Z",
+    "elapsedMs": 30542.4243,
+    "type": "server_stop_requested",
+    "pid": 40236,
+    "reason": "chaos"
+  },
+  {
+    "at": "2026-09-21T09:21:43.231Z",
+    "elapsedMs": 30553.0222,
+    "type": "server_exited",
+    "pid": 40236,
+    "code": null,
+    "signal": "SIGTERM"
+  },
+  {
+    "at": "2026-09-21T09:21:43.233Z",
+    "elapsedMs": 30554.4099,
+    "type": "server_stopped",
+    "pid": 40236,
+    "reason": "chaos"
+  },
+  {
+    "at": "2026-09-21T09:21:53.237Z",
+    "elapsedMs": 40558.7713,
+    "type": "restart_requested",
+    "confirmedStopToRestartMs": 10003.416499999996,
+    "k6StillRunning": true
+  },
+  {
+    "at": "2026-09-21T09:21:53.465Z",
+    "elapsedMs": 40786.4285,
+    "type": "server_ready",
+    "pid": 42944
+  },
+  {
+    "at": "2026-09-21T09:23:15.280Z",
+    "elapsedMs": 122602.57059999999,
+    "type": "k6_exited",
+    "pid": 43496,
+    "code": 99,
+    "signal": null
+  },
+  {
+    "at": "2026-09-21T09:23:15.281Z",
+    "elapsedMs": 122603.49269999999,
+    "type": "server_stop_requested",
+    "pid": 42944,
+    "reason": "run complete"
+  },
+  {
+    "at": "2026-09-21T09:23:15.289Z",
+    "elapsedMs": 122611.3421,
+    "type": "server_exited",
+    "pid": 42944,
+    "code": null,
+    "signal": "SIGTERM"
+  },
+  {
+    "at": "2026-09-21T09:23:15.296Z",
+    "elapsedMs": 122617.8519,
+    "type": "server_stopped",
+    "pid": 42944,
+    "reason": "run complete"
+  }
+]

@@ -1,0 +1,1096 @@
+Run: chaos
+Mode: chaos
+Started: 2026-09-21T09:21:12.992Z
+Git HEAD: cd8724a2235f772747dd7dace64bf4a4105f18cd
+Command: k6 run --no-color --summary-mode full --summary-export results/chaos.json --duration 2m -e CHAOS=1 slo-test.js
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: slo-test.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 20 max VUs, 2m30s max duration (incl. graceful stop):
+              * default: 20 looping VUs for 2m0s (gracefulStop: 30s)
+
+
+running (0m01.0s), 20/20 VUs, 0 complete and 0 interrupted iterations
+default   [   1% ] 20 VUs  0m01.0s/2m0s
+
+running (0m02.0s), 20/20 VUs, 20 complete and 0 interrupted iterations
+default   [   2% ] 20 VUs  0m02.0s/2m0s
+
+running (0m03.0s), 20/20 VUs, 40 complete and 0 interrupted iterations
+default   [   2% ] 20 VUs  0m03.0s/2m0s
+
+running (0m04.0s), 20/20 VUs, 53 complete and 0 interrupted iterations
+default   [   3% ] 20 VUs  0m04.0s/2m0s
+
+running (0m05.0s), 20/20 VUs, 60 complete and 0 interrupted iterations
+default   [   4% ] 20 VUs  0m05.0s/2m0s
+
+running (0m06.0s), 20/20 VUs, 80 complete and 0 interrupted iterations
+default   [   5% ] 20 VUs  0m06.0s/2m0s
+
+running (0m07.0s), 20/20 VUs, 100 complete and 0 interrupted iterations
+default   [   6% ] 20 VUs  0m07.0s/2m0s
+
+running (0m08.0s), 20/20 VUs, 116 complete and 0 interrupted iterations
+default   [   7% ] 20 VUs  0m08.0s/2m0s
+
+running (0m09.0s), 20/20 VUs, 121 complete and 0 interrupted iterations
+default   [   7% ] 20 VUs  0m09.0s/2m0s
+
+running (0m10.0s), 20/20 VUs, 140 complete and 0 interrupted iterations
+default   [   8% ] 20 VUs  0m10.0s/2m0s
+
+running (0m11.0s), 20/20 VUs, 160 complete and 0 interrupted iterations
+default   [   9% ] 20 VUs  0m11.0s/2m0s
+
+running (0m12.0s), 20/20 VUs, 176 complete and 0 interrupted iterations
+default   [  10% ] 20 VUs  0m12.0s/2m0s
+
+running (0m13.0s), 20/20 VUs, 183 complete and 0 interrupted iterations
+default   [  11% ] 20 VUs  0m13.0s/2m0s
+
+running (0m14.0s), 20/20 VUs, 200 complete and 0 interrupted iterations
+default   [  12% ] 20 VUs  0m14.0s/2m0s
+
+running (0m15.0s), 20/20 VUs, 220 complete and 0 interrupted iterations
+default   [  12% ] 20 VUs  0m15.0s/2m0s
+
+running (0m16.0s), 20/20 VUs, 236 complete and 0 interrupted iterations
+default   [  13% ] 20 VUs  0m16.0s/2m0s
+
+running (0m17.0s), 20/20 VUs, 248 complete and 0 interrupted iterations
+default   [  14% ] 20 VUs  0m17.0s/2m0s
+
+running (0m18.0s), 20/20 VUs, 260 complete and 0 interrupted iterations
+default   [  15% ] 20 VUs  0m18.0s/2m0s
+
+running (0m19.0s), 20/20 VUs, 280 complete and 0 interrupted iterations
+default   [  16% ] 20 VUs  0m19.0s/2m0s
+
+running (0m20.0s), 20/20 VUs, 297 complete and 0 interrupted iterations
+default   [  17% ] 20 VUs  0m20.0s/2m0s
+
+running (0m21.0s), 20/20 VUs, 310 complete and 0 interrupted iterations
+default   [  17% ] 20 VUs  0m21.0s/2m0s
+
+running (0m22.0s), 20/20 VUs, 320 complete and 0 interrupted iterations
+default   [  18% ] 20 VUs  0m22.0s/2m0s
+
+running (0m23.0s), 20/20 VUs, 340 complete and 0 interrupted iterations
+default   [  19% ] 20 VUs  0m23.0s/2m0s
+
+running (0m24.0s), 20/20 VUs, 358 complete and 0 interrupted iterations
+default   [  20% ] 20 VUs  0m24.0s/2m0s
+
+running (0m25.0s), 20/20 VUs, 373 complete and 0 interrupted iterations
+default   [  21% ] 20 VUs  0m25.0s/2m0s
+
+running (0m26.0s), 20/20 VUs, 382 complete and 0 interrupted iterations
+default   [  22% ] 20 VUs  0m26.0s/2m0s
+
+running (0m27.0s), 20/20 VUs, 400 complete and 0 interrupted iterations
+default   [  22% ] 20 VUs  0m27.0s/2m0s
+
+running (0m28.0s), 20/20 VUs, 419 complete and 0 interrupted iterations
+default   [  23% ] 20 VUs  0m28.0s/2m0s
+
+running (0m29.0s), 20/20 VUs, 433 complete and 0 interrupted iterations
+default   [  24% ] 20 VUs  0m29.0s/2m0s
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+
+running (0m30.0s), 20/20 VUs, 444 complete and 0 interrupted iterations
+default   [  25% ] 20 VUs  0m30.0s/2m0s
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=info msg="RECOVERY_START {\"vu\":1,\"at\":\"2026-09-21T09:21:43.367Z\",\"epochMs\":1789982503367,\"status\":0,\"errorCode\":1212}" source=console
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:43+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+
+running (0m31.0s), 20/20 VUs, 464 complete and 0 interrupted iterations
+default   [  26% ] 20 VUs  0m31.0s/2m0s
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:44+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+
+running (0m32.0s), 20/20 VUs, 484 complete and 0 interrupted iterations
+default   [  27% ] 20 VUs  0m32.0s/2m0s
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:45+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+
+running (0m33.0s), 20/20 VUs, 504 complete and 0 interrupted iterations
+default   [  27% ] 20 VUs  0m33.0s/2m0s
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:46+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+
+running (0m34.0s), 20/20 VUs, 524 complete and 0 interrupted iterations
+default   [  28% ] 20 VUs  0m34.0s/2m0s
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:47+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+
+running (0m35.0s), 20/20 VUs, 544 complete and 0 interrupted iterations
+default   [  29% ] 20 VUs  0m35.0s/2m0s
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:48+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+
+running (0m36.0s), 20/20 VUs, 564 complete and 0 interrupted iterations
+default   [  30% ] 20 VUs  0m36.0s/2m0s
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:49+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+
+running (0m37.0s), 20/20 VUs, 584 complete and 0 interrupted iterations
+default   [  31% ] 20 VUs  0m37.0s/2m0s
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:50+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+
+running (0m38.0s), 20/20 VUs, 604 complete and 0 interrupted iterations
+default   [  32% ] 20 VUs  0m38.0s/2m0s
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:51+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+
+running (0m39.0s), 20/20 VUs, 624 complete and 0 interrupted iterations
+default   [  32% ] 20 VUs  0m39.0s/2m0s
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:52+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+
+running (0m40.0s), 20/20 VUs, 643 complete and 0 interrupted iterations
+default   [  33% ] 20 VUs  0m40.0s/2m0s
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/cart/add\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Get \"http://127.0.0.1:3000/report\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+time="2026-09-21T17:21:53+08:00" level=warning msg="Request Failed" error="Post \"http://127.0.0.1:3000/pay\": dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it."
+
+running (0m41.0s), 20/20 VUs, 663 complete and 0 interrupted iterations
+default   [  34% ] 20 VUs  0m41.0s/2m0s
+time="2026-09-21T17:21:54+08:00" level=info msg="RECOVERY_END {\"vu\":1,\"at\":\"2026-09-21T09:21:54.388Z\",\"epochMs\":1789982514388,\"elapsedMs\":11021}" source=console
+
+running (0m42.0s), 20/20 VUs, 679 complete and 0 interrupted iterations
+default   [  35% ] 20 VUs  0m42.0s/2m0s
+
+running (0m43.0s), 20/20 VUs, 695 complete and 0 interrupted iterations
+default   [  36% ] 20 VUs  0m43.0s/2m0s
+
+running (0m44.0s), 20/20 VUs, 709 complete and 0 interrupted iterations
+default   [  37% ] 20 VUs  0m44.0s/2m0s
+
+running (0m45.0s), 20/20 VUs, 727 complete and 0 interrupted iterations
+default   [  37% ] 20 VUs  0m45.0s/2m0s
+
+running (0m46.0s), 20/20 VUs, 739 complete and 0 interrupted iterations
+default   [  38% ] 20 VUs  0m46.0s/2m0s
+
+running (0m47.0s), 20/20 VUs, 755 complete and 0 interrupted iterations
+default   [  39% ] 20 VUs  0m47.0s/2m0s
+
+running (0m48.0s), 20/20 VUs, 769 complete and 0 interrupted iterations
+default   [  40% ] 20 VUs  0m48.0s/2m0s
+
+running (0m49.0s), 20/20 VUs, 787 complete and 0 interrupted iterations
+default   [  41% ] 20 VUs  0m49.0s/2m0s
+
+running (0m50.0s), 20/20 VUs, 800 complete and 0 interrupted iterations
+default   [  42% ] 20 VUs  0m50.0s/2m0s
+
+running (0m51.0s), 20/20 VUs, 817 complete and 0 interrupted iterations
+default   [  42% ] 20 VUs  0m51.0s/2m0s
+
+running (0m52.0s), 20/20 VUs, 831 complete and 0 interrupted iterations
+default   [  43% ] 20 VUs  0m52.0s/2m0s
+
+running (0m53.0s), 20/20 VUs, 848 complete and 0 interrupted iterations
+default   [  44% ] 20 VUs  0m53.0s/2m0s
+
+running (0m54.0s), 20/20 VUs, 864 complete and 0 interrupted iterations
+default   [  45% ] 20 VUs  0m54.0s/2m0s
+
+running (0m55.0s), 20/20 VUs, 876 complete and 0 interrupted iterations
+default   [  46% ] 20 VUs  0m55.0s/2m0s
+
+running (0m56.0s), 20/20 VUs, 894 complete and 0 interrupted iterations
+default   [  47% ] 20 VUs  0m56.0s/2m0s
+
+running (0m57.0s), 20/20 VUs, 909 complete and 0 interrupted iterations
+default   [  47% ] 20 VUs  0m57.0s/2m0s
+
+running (0m58.0s), 20/20 VUs, 923 complete and 0 interrupted iterations
+default   [  48% ] 20 VUs  0m58.0s/2m0s
+
+running (0m59.0s), 20/20 VUs, 938 complete and 0 interrupted iterations
+default   [  49% ] 20 VUs  0m59.0s/2m0s
+
+running (1m00.0s), 20/20 VUs, 954 complete and 0 interrupted iterations
+default   [  50% ] 20 VUs  1m00.0s/2m0s
+
+running (1m01.0s), 20/20 VUs, 971 complete and 0 interrupted iterations
+default   [  51% ] 20 VUs  1m01.0s/2m0s
+
+running (1m02.0s), 20/20 VUs, 986 complete and 0 interrupted iterations
+default   [  52% ] 20 VUs  1m02.0s/2m0s
+
+running (1m03.0s), 20/20 VUs, 1000 complete and 0 interrupted iterations
+default   [  52% ] 20 VUs  1m03.0s/2m0s
+
+running (1m04.0s), 20/20 VUs, 1015 complete and 0 interrupted iterations
+default   [  53% ] 20 VUs  1m04.0s/2m0s
+
+running (1m05.0s), 20/20 VUs, 1031 complete and 0 interrupted iterations
+default   [  54% ] 20 VUs  1m05.0s/2m0s
+
+running (1m06.0s), 20/20 VUs, 1047 complete and 0 interrupted iterations
+default   [  55% ] 20 VUs  1m06.0s/2m0s
+
+running (1m07.0s), 20/20 VUs, 1063 complete and 0 interrupted iterations
+default   [  56% ] 20 VUs  1m07.0s/2m0s
+
+running (1m08.0s), 20/20 VUs, 1077 complete and 0 interrupted iterations
+default   [  57% ] 20 VUs  1m08.0s/2m0s
+
+running (1m09.0s), 20/20 VUs, 1092 complete and 0 interrupted iterations
+default   [  57% ] 20 VUs  1m09.0s/2m0s
+
+running (1m10.0s), 20/20 VUs, 1107 complete and 0 interrupted iterations
+default   [  58% ] 20 VUs  1m10.0s/2m0s
+
+running (1m11.0s), 20/20 VUs, 1125 complete and 0 interrupted iterations
+default   [  59% ] 20 VUs  1m11.0s/2m0s
+
+running (1m12.0s), 20/20 VUs, 1140 complete and 0 interrupted iterations
+default   [  60% ] 20 VUs  1m12.0s/2m0s
+
+running (1m13.0s), 20/20 VUs, 1155 complete and 0 interrupted iterations
+default   [  61% ] 20 VUs  1m13.0s/2m0s
+
+running (1m14.0s), 20/20 VUs, 1170 complete and 0 interrupted iterations
+default   [  62% ] 20 VUs  1m14.0s/2m0s
+
+running (1m15.0s), 20/20 VUs, 1185 complete and 0 interrupted iterations
+default   [  62% ] 20 VUs  1m15.0s/2m0s
+
+running (1m16.0s), 20/20 VUs, 1201 complete and 0 interrupted iterations
+default   [  63% ] 20 VUs  1m16.0s/2m0s
+
+running (1m17.0s), 20/20 VUs, 1216 complete and 0 interrupted iterations
+default   [  64% ] 20 VUs  1m17.0s/2m0s
+
+running (1m18.0s), 20/20 VUs, 1229 complete and 0 interrupted iterations
+default   [  65% ] 20 VUs  1m18.0s/2m0s
+
+running (1m19.0s), 20/20 VUs, 1247 complete and 0 interrupted iterations
+default   [  66% ] 20 VUs  1m19.0s/2m0s
+
+running (1m20.0s), 20/20 VUs, 1263 complete and 0 interrupted iterations
+default   [  67% ] 20 VUs  1m20.0s/2m0s
+
+running (1m21.0s), 20/20 VUs, 1278 complete and 0 interrupted iterations
+default   [  67% ] 20 VUs  1m21.0s/2m0s
+
+running (1m22.0s), 20/20 VUs, 1291 complete and 0 interrupted iterations
+default   [  68% ] 20 VUs  1m22.0s/2m0s
+
+running (1m23.0s), 20/20 VUs, 1307 complete and 0 interrupted iterations
+default   [  69% ] 20 VUs  1m23.0s/2m0s
+
+running (1m24.0s), 20/20 VUs, 1325 complete and 0 interrupted iterations
+default   [  70% ] 20 VUs  1m24.0s/2m0s
+
+running (1m25.0s), 20/20 VUs, 1339 complete and 0 interrupted iterations
+default   [  71% ] 20 VUs  1m25.0s/2m0s
+
+running (1m26.0s), 20/20 VUs, 1354 complete and 0 interrupted iterations
+default   [  72% ] 20 VUs  1m26.0s/2m0s
+
+running (1m27.0s), 20/20 VUs, 1368 complete and 0 interrupted iterations
+default   [  72% ] 20 VUs  1m27.0s/2m0s
+
+running (1m28.0s), 20/20 VUs, 1384 complete and 0 interrupted iterations
+default   [  73% ] 20 VUs  1m28.0s/2m0s
+
+running (1m29.0s), 20/20 VUs, 1402 complete and 0 interrupted iterations
+default   [  74% ] 20 VUs  1m29.0s/2m0s
+
+running (1m30.0s), 20/20 VUs, 1414 complete and 0 interrupted iterations
+default   [  75% ] 20 VUs  1m30.0s/2m0s
+
+running (1m31.0s), 20/20 VUs, 1430 complete and 0 interrupted iterations
+default   [  76% ] 20 VUs  1m31.0s/2m0s
+
+running (1m32.0s), 20/20 VUs, 1445 complete and 0 interrupted iterations
+default   [  77% ] 20 VUs  1m32.0s/2m0s
+
+running (1m33.0s), 20/20 VUs, 1462 complete and 0 interrupted iterations
+default   [  77% ] 20 VUs  1m33.0s/2m0s
+
+running (1m34.0s), 20/20 VUs, 1476 complete and 0 interrupted iterations
+default   [  78% ] 20 VUs  1m34.0s/2m0s
+
+running (1m35.0s), 20/20 VUs, 1491 complete and 0 interrupted iterations
+default   [  79% ] 20 VUs  1m35.0s/2m0s
+
+running (1m36.0s), 20/20 VUs, 1506 complete and 0 interrupted iterations
+default   [  80% ] 20 VUs  1m36.0s/2m0s
+
+running (1m37.0s), 20/20 VUs, 1523 complete and 0 interrupted iterations
+default   [  81% ] 20 VUs  1m37.0s/2m0s
+
+running (1m38.0s), 20/20 VUs, 1539 complete and 0 interrupted iterations
+default   [  82% ] 20 VUs  1m38.0s/2m0s
+
+running (1m39.0s), 20/20 VUs, 1553 complete and 0 interrupted iterations
+default   [  82% ] 20 VUs  1m39.0s/2m0s
+
+running (1m40.0s), 20/20 VUs, 1569 complete and 0 interrupted iterations
+default   [  83% ] 20 VUs  1m40.0s/2m0s
+
+running (1m41.0s), 20/20 VUs, 1583 complete and 0 interrupted iterations
+default   [  84% ] 20 VUs  1m41.0s/2m0s
+
+running (1m42.0s), 20/20 VUs, 1599 complete and 0 interrupted iterations
+default   [  85% ] 20 VUs  1m42.0s/2m0s
+
+running (1m43.0s), 20/20 VUs, 1615 complete and 0 interrupted iterations
+default   [  86% ] 20 VUs  1m43.0s/2m0s
+
+running (1m44.0s), 20/20 VUs, 1630 complete and 0 interrupted iterations
+default   [  87% ] 20 VUs  1m44.0s/2m0s
+
+running (1m45.0s), 20/20 VUs, 1644 complete and 0 interrupted iterations
+default   [  87% ] 20 VUs  1m45.0s/2m0s
+
+running (1m46.0s), 20/20 VUs, 1661 complete and 0 interrupted iterations
+default   [  88% ] 20 VUs  1m46.0s/2m0s
+
+running (1m47.0s), 20/20 VUs, 1676 complete and 0 interrupted iterations
+default   [  89% ] 20 VUs  1m47.0s/2m0s
+
+running (1m48.0s), 20/20 VUs, 1692 complete and 0 interrupted iterations
+default   [  90% ] 20 VUs  1m48.0s/2m0s
+
+running (1m49.0s), 20/20 VUs, 1705 complete and 0 interrupted iterations
+default   [  91% ] 20 VUs  1m49.0s/2m0s
+
+running (1m50.0s), 20/20 VUs, 1720 complete and 0 interrupted iterations
+default   [  92% ] 20 VUs  1m50.0s/2m0s
+
+running (1m51.0s), 20/20 VUs, 1737 complete and 0 interrupted iterations
+default   [  92% ] 20 VUs  1m51.0s/2m0s
+
+running (1m52.0s), 20/20 VUs, 1752 complete and 0 interrupted iterations
+default   [  93% ] 20 VUs  1m52.0s/2m0s
+
+running (1m53.0s), 20/20 VUs, 1768 complete and 0 interrupted iterations
+default   [  94% ] 20 VUs  1m53.0s/2m0s
+
+running (1m54.0s), 20/20 VUs, 1781 complete and 0 interrupted iterations
+default   [  95% ] 20 VUs  1m54.0s/2m0s
+
+running (1m55.0s), 20/20 VUs, 1798 complete and 0 interrupted iterations
+default   [  96% ] 20 VUs  1m55.0s/2m0s
+
+running (1m56.0s), 20/20 VUs, 1812 complete and 0 interrupted iterations
+default   [  97% ] 20 VUs  1m56.0s/2m0s
+
+running (1m57.0s), 20/20 VUs, 1831 complete and 0 interrupted iterations
+default   [  97% ] 20 VUs  1m57.0s/2m0s
+
+running (1m58.0s), 20/20 VUs, 1845 complete and 0 interrupted iterations
+default   [  98% ] 20 VUs  1m58.0s/2m0s
+
+running (1m59.0s), 20/20 VUs, 1860 complete and 0 interrupted iterations
+default   [  99% ] 20 VUs  1m59.0s/2m0s
+
+running (2m00.0s), 20/20 VUs, 1874 complete and 0 interrupted iterations
+default   [ 100% ] 20 VUs  2m00.0s/2m0s
+
+running (2m01.0s), 03/20 VUs, 1892 complete and 0 interrupted iterations
+default ↓ [ 100% ] 20 VUs  2m0s
+
+
+  █ THRESHOLDS 
+
+    checks
+    ✗ 'rate>=0.90' rate=87.51%
+
+    http_req_duration{name:cart}
+    ✓ 'p(95)<1.235' p(95)=742.09µs
+
+    http_req_duration{name:report}
+    ✓ 'p(95)<450' p(95)=396.27ms
+
+    http_req_failed{name:pay}
+    ✗ 'rate<0.08' rate=15.51%
+
+    recovery_events
+    ✓ 'count==1' count=1
+
+    recovery_ms
+    ✓ 'max<15000' max=11.02s
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 5685   46.865505/s
+    checks_succeeded...: 87.51% 4975 out of 5685
+    checks_failed......: 12.48% 710 out of 5685
+
+    ✗ cart 200
+      ↳  89% — ✓ 1688 / ✗ 207
+    ✗ report 200
+      ↳  88% — ✓ 1686 / ✗ 209
+    ✗ pay 200
+      ↳  84% — ✓ 1601 / ✗ 294
+
+    CUSTOM
+    recovery_events................: 1      0.008244/s
+    recovery_ms....................: avg=11.02s   min=11.02s med=11.02s   max=11.02s   p(95)=11.02s   p(99)=11.02s   count=1   
+
+    HTTP
+    http_req_blocked...............: avg=16.71µs  min=0s     med=0s       max=3.99ms   p(95)=0s       p(99)=505.24µs count=5685
+    http_req_connecting............: avg=13.27µs  min=0s     med=0s       max=3.99ms   p(95)=0s       p(99)=0s       count=5685
+    http_req_duration..............: avg=90.74ms  min=0s     med=507.49µs max=412.33ms p(95)=371.89ms p(99)=398.63ms count=5685
+      { expected_response:true }...: avg=103.63ms min=0s     med=527.29µs max=412.33ms p(95)=380.33ms p(99)=398.81ms count=4975
+      { name:cart }................: avg=446.54µs min=0s     med=0s       max=23.96ms  p(95)=742.09µs p(99)=9.87ms   count=1895
+      { name:pay }.................: avg=235.84µs min=0s     med=0s       max=2.42ms   p(95)=649.59µs p(99)=1.05ms   count=1895
+      { name:report }..............: avg=271.55ms min=0s     med=290.28ms max=412.33ms p(95)=396.27ms p(99)=402.49ms count=1895
+    http_req_failed................: 12.48% 710 out of 5685
+      { name:pay }.................: 15.51% 294 out of 1895
+    http_req_receiving.............: avg=103.26µs min=0s     med=0s       max=1.12ms   p(95)=554.81µs p(99)=705.7µs  count=5685
+    http_req_sending...............: avg=11.92µs  min=0s     med=0s       max=745.5µs  p(95)=0s       p(99)=647.94µs count=5685
+    http_req_tls_handshaking.......: avg=0s       min=0s     med=0s       max=0s       p(95)=0s       p(99)=0s       count=5685
+    http_req_waiting...............: avg=90.63ms  min=0s     med=504.8µs  max=411.99ms p(95)=371.79ms p(99)=398.29ms count=5685
+    http_reqs......................: 5685   46.865505/s
+
+    EXECUTION
+    iteration_duration.............: avg=1.27s    min=1s     med=1.29s    max=1.43s    p(95)=1.39s    p(99)=1.4s     count=1895
+    iterations.....................: 1895   15.621835/s
+    vus............................: 3      min=3           max=20
+    vus_max........................: 20     min=20          max=20
+
+    NETWORK
+    data_received..................: 1.3 MB 11 kB/s
+    data_sent......................: 451 kB 3.7 kB/s
+
+
+
+
+running (2m01.3s), 00/20 VUs, 1895 complete and 0 interrupted iterations
+default ✓ [ 100% ] 20 VUs  2m0s
+time="2026-09-21T17:23:15+08:00" level=error msg="thresholds on metrics 'checks, http_req_failed{name:pay}' have been crossed"
+
+Finished: 2026-09-21T09:23:15.280Z
+k6 exit code: 99
+k6 signal: null
+
+RUN VERIFICATION: chaos | native k6 exit=99
+recovery_ms: {"max":11021,"p(95)":11021,"p(99)":11021,"count":1,"avg":11021,"min":11021,"med":11021,"thresholds":{"max<15000":false}}
+http_req_duration{name:cart}: {"min":0,"med":0,"max":23.9655,"p(95)":0.7420999999999999,"p(99)":9.870315999999864,"count":1895,"avg":0.4465458575197882,"thresholds":{"p(95)<1.235":false}}
+http_req_failed{name:pay}: {"passes":294,"fails":1601,"thresholds":{"rate<0.08":true},"value":0.15514511873350922}
+checks: {"passes":4975,"fails":710,"thresholds":{"rate>=0.90":true},"value":0.8751099384344767}
+http_req_duration{name:report}: {"avg":271.5578416358837,"min":0,"med":290.2875,"max":412.3366,"p(95)":396.27073,"p(99)":402.495794,"count":1895,"thresholds":{"p(95)<450":false}}
+recovery_events: {"rate":0.008243712357153602,"count":1,"thresholds":{"count==1":false}}
+Requests: {"rate":46.865504750418225,"count":5685}
+Checks: {"passes":4975,"fails":710,"thresholds":{"rate>=0.90":true},"value":0.8751099384344767}
