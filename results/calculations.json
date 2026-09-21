@@ -58,7 +58,7 @@
       ],
       "recoveryMs": 10020
     },
-    "pass": {
+    "pass-previous": {
       "requests": 2772,
       "requestsPerSecond": 45.21701200229796,
       "successes": 2727,
@@ -76,7 +76,7 @@
       "exitCode": 0,
       "failedThresholds": []
     },
-    "chaos": {
+    "chaos-previous": {
       "requests": 5685,
       "requestsPerSecond": 46.865504750418225,
       "successes": 4975,
@@ -98,7 +98,7 @@
       ],
       "recoveryMs": 11021
     },
-    "fail": {
+    "fail-previous": {
       "requests": 2769,
       "requestsPerSecond": 45.21319525403115,
       "successes": 2715,
@@ -117,24 +117,84 @@
       "failedThresholds": [
         "http_req_duration{name:report}: p(95)<100"
       ]
+    },
+    "pass": {
+      "requests": 2769,
+      "requestsPerSecond": 45.401632407577,
+      "successes": 2729,
+      "failures": 40,
+      "availabilityPercent": 98.55543517515349,
+      "payFailures": 40,
+      "payRequests": 923,
+      "payErrorPercent": 4.333694474539545,
+      "cartP95Ms": 0.8264999999999999,
+      "cartP99Ms": 15.091683999999951,
+      "reportP95Ms": 396.73373,
+      "reportP99Ms": 405.672274,
+      "payP95Ms": 1.00494,
+      "payP99Ms": 1.199206,
+      "exitCode": 0,
+      "failedThresholds": []
+    },
+    "chaos": {
+      "requests": 5670,
+      "requestsPerSecond": 46.84222848609022,
+      "successes": 4970,
+      "failures": 700,
+      "availabilityPercent": 87.65432098765432,
+      "payFailures": 288,
+      "payRequests": 1890,
+      "payErrorPercent": 15.238095238095239,
+      "cartP95Ms": 0.735605,
+      "cartP99Ms": 8.681680999999923,
+      "reportP95Ms": 393.67897500000004,
+      "reportP99Ms": 406.253413,
+      "payP95Ms": 0.6863149999999998,
+      "payP99Ms": 1.089513999999998,
+      "exitCode": 99,
+      "failedThresholds": [
+        "http_req_failed{name:pay}: rate<0.08",
+        "checks: rate>=0.90"
+      ],
+      "recoveryMs": 10017
+    },
+    "fail": {
+      "requests": 2772,
+      "requestsPerSecond": 45.21778632947108,
+      "successes": 2724,
+      "failures": 48,
+      "availabilityPercent": 98.26839826839827,
+      "payFailures": 48,
+      "payRequests": 924,
+      "payErrorPercent": 5.194805194805195,
+      "cartP95Ms": 0.8026449999999995,
+      "cartP99Ms": 13.2874,
+      "reportP95Ms": 396.30406999999997,
+      "reportP99Ms": 407.616296,
+      "payP95Ms": 0.8766599999999999,
+      "payP99Ms": 1.1112909999999998,
+      "exitCode": 99,
+      "failedThresholds": [
+        "http_req_duration{name:report}: p(95)<100"
+      ]
     }
   },
   "calculations": {
     "cartBaselineTimes1point5": 1.234665,
     "cartThresholdRoundedUpMs": 1.235,
     "timeBudgetSeconds": 12,
-    "requestBudgetExact": 568.5,
-    "requestBudgetWhole": 568,
-    "minimumSuccessfulRequests": 5117,
-    "excessFailedRequests": 142,
-    "confirmedStopToRestartRequestMs": 10003.416499999996,
-    "confirmedStopToReadyMs": 10232.018600000003,
+    "requestBudgetExact": 567,
+    "requestBudgetWhole": 567,
+    "minimumSuccessfulRequests": 5103,
+    "excessFailedRequests": 133,
+    "confirmedStopToRestartRequestMs": 10000.825,
+    "confirmedStopToReadyMs": 10209.291400000006,
     "transportFailures": {
-      "cart": 207,
+      "cart": 203,
       "report": 209,
       "pay": 209
     },
-    "payHttp500Failures": 85
+    "payHttp500Failures": 79
   },
   "source": "Derived from corresponding k6 JSON/text outputs and chaos process-event timestamps."
 }

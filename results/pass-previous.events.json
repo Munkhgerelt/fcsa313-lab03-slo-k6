@@ -1,0 +1,53 @@
+[
+  {
+    "at": "2026-09-21T09:24:59.801Z",
+    "elapsedMs": 244.09490000000002,
+    "type": "server_ready",
+    "pid": 43496
+  },
+  {
+    "at": "2026-09-21T09:24:59.969Z",
+    "elapsedMs": 410.95459999999997,
+    "type": "k6_started",
+    "pid": 21280,
+    "args": [
+      "run",
+      "--no-color",
+      "--summary-mode",
+      "full",
+      "--summary-export",
+      "results/pass.json",
+      "slo-test.js"
+    ]
+  },
+  {
+    "at": "2026-09-21T09:26:01.911Z",
+    "elapsedMs": 62352.277799999996,
+    "type": "k6_exited",
+    "pid": 21280,
+    "code": 0,
+    "signal": null
+  },
+  {
+    "at": "2026-09-21T09:26:01.912Z",
+    "elapsedMs": 62353.4147,
+    "type": "server_stop_requested",
+    "pid": 43496,
+    "reason": "run complete"
+  },
+  {
+    "at": "2026-09-21T09:26:01.922Z",
+    "elapsedMs": 62363.514899999995,
+    "type": "server_exited",
+    "pid": 43496,
+    "code": null,
+    "signal": "SIGTERM"
+  },
+  {
+    "at": "2026-09-21T09:26:01.929Z",
+    "elapsedMs": 62370.081999999995,
+    "type": "server_stopped",
+    "pid": 43496,
+    "reason": "run complete"
+  }
+]

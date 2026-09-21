@@ -4,7 +4,7 @@ const { execFileSync } = require('node:child_process');
 process.chdir(__dirname);
 const read = path => JSON.parse(fs.readFileSync(path, 'utf8'));
 const runs = {};
-for (const name of ['baseline', 'pass-initial', 'chaos-initial', 'pass', 'chaos', 'fail']) {
+for (const name of ['baseline', 'pass-initial', 'chaos-initial', 'pass-previous', 'chaos-previous', 'fail-previous', 'pass', 'chaos', 'fail']) {
   const m = read(`results/${name}.json`).metrics;
   const output = fs.readFileSync(`results/${name}.txt`, 'utf8');
   const cart = m['http_req_duration{name:cart}'];
@@ -20,7 +20,7 @@ for (const name of ['baseline', 'pass-initial', 'chaos-initial', 'pass', 'chaos'
   if(name !== 'baseline') {
     // k6 legacy JSON uses true for a crossed (failed) threshold, false for passed.
     assert.equal(cart.thresholds['p(95)<1.235'], !(cart['p(95)'] < 1.235));
-    const reportLimit = name === 'fail' ? 100 : 450;
+    const reportLimit = name.startsWith('fail') ? 100 : 450;
     assert.equal(report.thresholds[`p(95)<${reportLimit}`], !(report['p(95)'] < reportLimit));
     assert.equal(payError.thresholds['rate<0.08'], !(payError.value < .08));
     assert.equal(m.checks.thresholds['rate>=0.90'], !(m.checks.value >= .90));
@@ -39,6 +39,11 @@ for (const name of ['baseline', 'pass-initial', 'chaos-initial', 'pass', 'chaos'
     payP95Ms:pay['p(95)'], payP99Ms:pay['p(99)'], exitCode, failedThresholds:failed,
     ...(m.recovery_ms ? {recoveryMs:m.recovery_ms.max} : {}),
   };
+}
+for (const name of ['pass','chaos','fail']) {
+  for (const ext of ['txt','json','events.json','server.txt']) {
+    assert.ok(fs.readFileSync(`results/${name}.${ext}`).equals(fs.readFileSync(`results/${name}-photo-20260921-175602.${ext}`)), `${name}: screenshot run alias`);
+  }
 }
 const events = read('results/chaos.events.json');
 const stopped = events.find(e=>e.type==='server_stopped' && e.reason==='chaos');
@@ -73,6 +78,7 @@ const calculations = {
   payHttp500Failures:runs.chaos.payFailures-transportFailures.pay,
 };
 assert.equal(calculations.cartThresholdRoundedUpMs, 1.235);
+assert.equal(Object.values(transportFailures).reduce((a,b)=>a+b,0)+calculations.payHttp500Failures,runs.chaos.failures);
 const readme = fs.readFileSync('README.md','utf8');
 for(const script of ['slo-test.js','slo-test-fail.js']) {
   const options=JSON.parse(execFileSync('k6',['inspect','-e','CHAOS=1',script],{encoding:'utf8'}));
@@ -90,5 +96,5 @@ const conclusion=readme.split('## Дүгнэлт\n')[1].split('\n\nЭнэ дүг
 assert.equal(conclusion.length,9);
 const result={runs,calculations,source:'Derived from corresponding k6 JSON/text outputs and chaos process-event timestamps.'};
 fs.writeFileSync('results/calculations.json',JSON.stringify(result,null,2)+'\n');
-console.log('VERIFIED: all 6 runs, native exit codes, check denominators, threshold results, real chaos process replacement, recovery, four scenario tables and README threshold expressions.');
+console.log('VERIFIED: all 9 runs, native exit codes, check denominators, threshold results, real chaos process replacement, recovery, four scenario tables and README threshold expressions.');
 console.log(JSON.stringify(calculations,null,2));

@@ -1,18 +1,18 @@
-VERIFIED: all 6 runs, native exit codes, check denominators, threshold results, real chaos process replacement, recovery, four scenario tables and README threshold expressions.
+VERIFIED: all 9 runs, native exit codes, check denominators, threshold results, real chaos process replacement, recovery, four scenario tables and README threshold expressions.
 {
   "cartBaselineTimes1point5": 1.234665,
   "cartThresholdRoundedUpMs": 1.235,
   "timeBudgetSeconds": 12,
-  "requestBudgetExact": 568.5,
-  "requestBudgetWhole": 568,
-  "minimumSuccessfulRequests": 5117,
-  "excessFailedRequests": 142,
-  "confirmedStopToRestartRequestMs": 10003.416499999996,
-  "confirmedStopToReadyMs": 10232.018600000003,
+  "requestBudgetExact": 567,
+  "requestBudgetWhole": 567,
+  "minimumSuccessfulRequests": 5103,
+  "excessFailedRequests": 133,
+  "confirmedStopToRestartRequestMs": 10000.825,
+  "confirmedStopToReadyMs": 10209.291400000006,
   "transportFailures": {
-    "cart": 207,
+    "cart": 203,
     "report": 209,
     "pay": 209
   },
-  "payHttp500Failures": 85
+  "payHttp500Failures": 79
 }
