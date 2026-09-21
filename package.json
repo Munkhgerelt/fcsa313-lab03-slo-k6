@@ -1,0 +1,8 @@
+{
+  "name": "fcsa313-lab03-slo-k6",
+  "version": "1.0.0",
+  "private": true,
+  "description": "F.CSA313 Lab 3 localhost API and measured SLO tests",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "express": "^5.1.0" }
+}

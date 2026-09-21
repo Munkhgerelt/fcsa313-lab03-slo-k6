@@ -1,0 +1,1 @@
+Captured: 2026-09-21T17:11:19.4755949+08:00 OS: Microsoft Windows NT 10.0.26200.0 PowerShell: 7.6.5 Node: v24.19.0 npm: 11.17.0 k6.exe v2.2.0 (commit/00a9a1b7f5, go1.26.5, windows/amd64) git version 2.49.0.windows.1 GitHub authenticated login: Munkhgerelt

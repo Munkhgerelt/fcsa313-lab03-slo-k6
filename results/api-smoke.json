@@ -1,0 +1,34 @@
+{
+  "capturedAt": "2026-09-21T09:11:21.831Z",
+  "base": "http://127.0.0.1:3000",
+  "routes": [
+    {
+      "path": "/cart/add",
+      "method": "POST",
+      "status": 200,
+      "body": {
+        "ok": true,
+        "items": 1
+      },
+      "elapsedMs": 53.2391
+    },
+    {
+      "path": "/report",
+      "method": "GET",
+      "status": 200,
+      "body": {
+        "rows": 20000
+      },
+      "elapsedMs": 310.3111
+    },
+    {
+      "path": "/pay",
+      "method": "POST",
+      "status": 200,
+      "body": {
+        "paid": true
+      },
+      "elapsedMs": 17.166799999999967
+    }
+  ]
+}
