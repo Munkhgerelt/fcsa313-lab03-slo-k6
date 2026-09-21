@@ -15,8 +15,8 @@ AI-ийн код, URL, босгыг локал орчинд ажиллуулж �
 - [x] Бүтэн stdout/stderr, native exit code, ижил run-ы нотолгоо.
 - [ ] Бодит дэлгэцийн зургууд: сервер ажиллах үеийн capture ба үр дүнгийн Notepad log view; зогсолтын үеийн live capture байхгүй.
 - [x] README тооцоо, p95/p99, хугацааны ба хүсэлтийн budget, 8–10 өгүүлбэрийн дүгнэлт.
-- [ ] Public GitHub, файл/README/history шалгалт.
-- [ ] Teams холбоос, Turn in, баталгаажсан төлөв (нэвтрэх шаардлагатай).
+- [x] Public GitHub, файл/README/history шалгалт: https://github.com/Munkhgerelt/fcsa313-lab03-slo-k6; signed-out browser дээр README, 5 зураг, 9 commit харагдсан.
+- [x] Teams холбоос хавсаргасан, Turn in дарсан: 2026-09-21 17:41 (Asia/Ulaanbaatar). UI дээр Turned in болон Undo turn in харагдсан.
 
 Тайлбарлах зөрүү: зааврын availability хүснэгт ≥90%, жишээ код >90% гэсэн тул ≥90% буюу rate>=0.90-ийг нэг мөр ашиглана.
 Cart-ийн baseline p95 × 1.5 нь энэ ажлын сонголт бөгөөд багшийн feedback-т нийцнэ; Лаб 3-ын заавар үндэслэлтэй босго сонгохыг зөвшөөрдөг.
@@ -25,3 +25,7 @@ Recovery-г төлөвлөсөн 10 секундтэй адилтгахгүй; �
 ## Нотолгооны тайлбар
 
 Анхны normal/chaos run-уудыг initial нэртэйгээр хадгалсан. Дахин хэмжихдээ сервер, threshold өөрчлөөгүй. Native Computer Use нь терминал цонх сонгохыг хязгаарласан, Browser Use нь localhost хаягийг ERR_BLOCKED_BY_CLIENT гэж хаасан. Иймээс үр дүнгийн зургуудыг Notepad дахь бодит post-run log view гэж тодорхой тэмдэглэнэ; live outage capture гэж нэрлэхгүй.
+
+## Илгээсэн төлөв
+
+2026-09-21 17:41-д F.CSA313 «Лаборатори №3: Чанарын сценарио → SLO → k6 threshold» assignment-д public repository холбоосыг илгээсэн. Due date: 2026-09-22 23:59. Submission screenshot-ийг репогийн гадна локал хадгалсан. Live outage screenshot дутуу гэсэн хязгаарлалт хэвээр бөгөөд README-д тодорхой тайлбарласан.
