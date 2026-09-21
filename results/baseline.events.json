@@ -1,0 +1,53 @@
+[
+  {
+    "at": "2026-09-21T09:12:58.083Z",
+    "elapsedMs": 232.62769999999998,
+    "type": "server_ready",
+    "pid": 37008
+  },
+  {
+    "at": "2026-09-21T09:12:58.252Z",
+    "elapsedMs": 400.90279999999996,
+    "type": "k6_started",
+    "pid": 40144,
+    "args": [
+      "run",
+      "--no-color",
+      "--summary-mode",
+      "full",
+      "--summary-export",
+      "results/baseline.json",
+      "baseline.js"
+    ]
+  },
+  {
+    "at": "2026-09-21T09:14:00.120Z",
+    "elapsedMs": 62268.4762,
+    "type": "k6_exited",
+    "pid": 40144,
+    "code": 0,
+    "signal": null
+  },
+  {
+    "at": "2026-09-21T09:14:00.121Z",
+    "elapsedMs": 62269.205,
+    "type": "server_stop_requested",
+    "pid": 37008,
+    "reason": "run complete"
+  },
+  {
+    "at": "2026-09-21T09:14:00.129Z",
+    "elapsedMs": 62277.5931,
+    "type": "server_exited",
+    "pid": 37008,
+    "code": null,
+    "signal": "SIGTERM"
+  },
+  {
+    "at": "2026-09-21T09:14:00.130Z",
+    "elapsedMs": 62278.4826,
+    "type": "server_stopped",
+    "pid": 37008,
+    "reason": "run complete"
+  }
+]
