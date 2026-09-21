@@ -1,0 +1,18 @@
+VERIFIED: all 6 runs, native exit codes, check denominators, threshold results, real chaos process replacement, recovery, four scenario tables and README threshold expressions.
+{
+  "cartBaselineTimes1point5": 1.234665,
+  "cartThresholdRoundedUpMs": 1.235,
+  "timeBudgetSeconds": 12,
+  "requestBudgetExact": 568.5,
+  "requestBudgetWhole": 568,
+  "minimumSuccessfulRequests": 5117,
+  "excessFailedRequests": 142,
+  "confirmedStopToRestartRequestMs": 10003.416499999996,
+  "confirmedStopToReadyMs": 10232.018600000003,
+  "transportFailures": {
+    "cart": 207,
+    "report": 209,
+    "pay": 209
+  },
+  "payHttp500Failures": 85
+}

@@ -1,0 +1,5 @@
+Captured: 2026-09-21T09:33:57.656Z
+OS: Windows_NT 10.0.26200 x64
+Node: v24.19.0
+Express: 5.2.1
+Earlier shell/tool versions: see original environment.txt
