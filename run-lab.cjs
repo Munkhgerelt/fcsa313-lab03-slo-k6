@@ -91,6 +91,13 @@ async function main() {
   event('k6_exited',{pid:k6.pid,code,signal});
   await chaosTask;
   await stopServer('run complete');
+  // This is emitted by the original running process, after the complete k6 output.
+  const summary = JSON.parse(fs.readFileSync(`${prefix}.json`, 'utf8'));
+  write(`\nRUN VERIFICATION: ${name} | native k6 exit=${code}\n`);
+  for(const [metric, data] of Object.entries(summary.metrics)) {
+    if(data.thresholds)write(`${metric}: ${JSON.stringify(data)}\n`);
+  }
+  write(`Requests: ${JSON.stringify(summary.metrics.http_reqs)}\nChecks: ${JSON.stringify(summary.metrics.checks)}\n`);
   process.exitCode=code===null?1:code;
 }
 main().catch(async error=>{
